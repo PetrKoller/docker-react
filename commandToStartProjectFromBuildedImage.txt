@@ -1,0 +1,6 @@
+
+build project
+docker build -f Dockerfile.dev .
+
+start and link volumes
+docker run -it -p 3000:3000 -v /home/node/app/node_modules -v $(pwd):/home/node/app 09d431304af5
